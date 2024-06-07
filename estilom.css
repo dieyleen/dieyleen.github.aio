@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+}
+
+.texto-1 {
+    text-align: center;
+    font-family: lucida;
+    font-size: 60px;
+   
+}
+
+.texto-1-5{
+    text-align: center;
+    font-family: lucida;
+    font-size: 60px;
+}
+
+.texto-2{
+    text-align: center;
+    font-family: lucida;
+    font-size: 15px;
+}
+
+.texto-3{
+    text-align: center;
+    font-size: 45px;
+}
+
+#search {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid  #5c5b5b;
+    border-radius: 5px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color:  #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.product img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    padding: 5px 0;
+}
+
+#pay-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pay-button:hover {
+    background-color: #218838;
+}
+
+
+@keyframes add-to-cart {
+    0% {
+        transform: scale(1);
+        background-color: #fff;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: #f0f0f0;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #fff;
+    }
+}
+
+.product.added {
+    animation: add-to-cart 0.5s ease-in-out;
+}
+
+.navegacion{
+    background-color: var(#000000);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion-1,
+.navegacion-2,
+.navegacion-3{
+    font-family: serif;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.contenido{
+    background: #c2c4b6;
+    size: 25px;
+}
+
+.pepe{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.infi{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.santa{
+    font-size: 18px;
+}
+
+.fotop{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotop img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pecas{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.pecas .nose{
+    flex: 1;
+    text-align: center;
+}
+
+.pecas img{
+    max-width: 100px;
+    height: auto;
+
+}
+
+.momento{
+    background: rgb(250, 213, 178);
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    display: none;
+  }
+
+.product-gallery {
+    display: flex;
+  }
+
+.productos-nuevos {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+.expanded {
+    transform: scale(1.1);
+  }
+
+.pera {
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    background-color: #ed1c24;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #ed1c24;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .productss {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .productsss{
+    width: 300px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .productsss img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .logito{
+    width: 87px;
+    right: 439px;
+    position: relative;
+    top: 110px;
+
+  }
+
+  .logi{
+    width: 87px;
+    right: 569px;
+    position: relative;
+    top: 110px;
+
+  }
